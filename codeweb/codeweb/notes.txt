@@ -1,0 +1,1 @@
+Just in case index.py is run on a console instead

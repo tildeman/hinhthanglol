@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hình thang lol</title>
+	<link rel="stylesheet" type="text/css" href="codeweb/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="htlol.png">
+</head>
+<body>
+	<script>
+		function loc(s){
+			location="?req="+s;
+		}
+	</script>
+	<div class="menu">
+		<button class='menu_btn' onclick='location="."'>Trang chủ</button>
+		<button class='menu_btn' onclick='loc("search")'>Tìm kiếm</button>
+		<button class='menu_btn' onclick='loc("parselog")'>Đọc file log</button>
+		<button class='menu_btn' onclick='loc("upload")'>Gửi file bài tập</button>
+		<button class='menu_btn' onclick='loc("logout")'>Đăng xuất</button>
+	</div>
+	<div class='title_container'>
+		<img src="accept.gif" class='lol'>
+		<span class='title'>Hình thang lol</span>
+		<img src="accept.gif" class='lol'>
+	</div>
+	<table class='logs_tbl'>
+		<tr>
+			<th>Người nộp</th>
+			<th>Tên bài</th>
+			<th>Tổng điểm</th>
+			<th>Ngôn ngữ</th>
+		</tr>
+		<tr>
+			<td>%s</td>
+			<td>%s</td>
+			<td>%s</td>
+			<td>%s</td>
+		</tr>
+	</table>
+	<br><span class='ct'>Chi tiết:</span>
+	<table class='logs_tbl'>
+		<tr>
+			<th>Test</th>
+			<th>Kết quả</th>
+		</tr>
+		%s
+	</table>
+</body>
+</html>

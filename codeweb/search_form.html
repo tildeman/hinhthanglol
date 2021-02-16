@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hình thang lol</title>
+	<link rel="stylesheet" type="text/css" href="codeweb/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="htlol.png">
+</head>
+<body>
+	<script>
+		function loc(s){
+			location="?req="+s;
+		}
+		function refresh(){
+			location="?req=search&round="+document.getElementById("sel_round").value;
+		}
+		function debai(){
+			if (document.getElementById("sel_db").value!=""){
+				document.getElementById("debai_frame").src="http://hoc.chuyentin.pro:8002/contests/test/"+document.getElementById("sel_db").value;
+				console.log(document.getElementById("sel_db").pdfopen);
+			}
+		}
+	</script>
+	<div class="menu">
+		<button class='menu_btn' onclick='location="."'>Trang chủ</button>
+		<button class='menu_btn' onclick='loc("search")'>Tìm kiếm</button>
+		<button class='menu_btn' onclick='loc("parselog")'>Đọc file log</button>
+		<button class='menu_btn' onclick='loc("upload")'>Gửi file bài tập</button>
+		<button class='menu_btn' onclick='loc("logout")'>Đăng xuất</button>
+	</div>
+	<div class='title_container'>
+		<img src="accept.gif" class='lol'>
+		<span class='title'>Hình thang lol</span>
+		<img src="accept.gif" class='lol'>
+	</div>
+	<select id="sel_round" onchange='refresh()'>
+		<option value="0">Vui lòng chọn mục đề bài</option>
+		%s
+	</select>
+	<select id="sel_db" onchange="debai()">
+		<option value="">Vui lòng chọn bài làm</option>
+		%s
+	</select>
+	<iframe src="lol.png" id="debai_frame"></iframe>
+</body>
+</html>

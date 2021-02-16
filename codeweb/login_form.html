@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hình thang lol</title>
+	<link rel="stylesheet" type="text/css" href="codeweb/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="htlol.png">
+</head>
+<body>
+	<script type="text/javascript">
+		function show(){
+			document.getElementById('show_login_form').style.display='none';
+			document.getElementById('show_id_form').style.display='none';
+			document.getElementById('sid_form').style.display='block';
+		}
+		function show_reg_form(){
+			document.getElementById('show_login_form').style.display='none';
+			document.getElementById('show_id_form').style.display='none';
+			document.getElementById('login_form').style.display='block';
+		}
+	</script>
+	<div class='title_container'>
+		<img src="accept.gif" class='lol'>
+		<span class='title'>Hình thang lol</span>
+		<img src="accept.gif" class='lol'>
+	</div>
+	<div class='error_box box'>Bạn cần phải đăng nhập vào Coder Nhí trước khi truy cập vào Hình thang lol!</div>
+	<div class='info_box box'>Nếu bạn đang có vấn đề về đăng nhập, bạn có thể đổi ID Session ở phía dưới.</div>
+	<button id='show_id_form' onclick='show()'>Đổi ID Session</button><br>
+	<button id='show_login_form' onclick='show_reg_form()'>Đăng nhập</button><br>
+	<div id='sid_form' style='display: none;'>
+		<form method='post'>
+			<div style="padding: 10px 0">Nhập Session ID:</div>
+			<input type="text" name="sid" id="sid_inp" placeholder="Session ID" value=''><br>
+			<input type="submit" name="sub" id="sub_btn" value="Đổi">
+		</form>
+	</div>
+	<div id='login_form' style='display: none;'>
+		<form method='post'>
+			<div style="padding: 10px 0">Tên người dùng</div>
+			<input type="text" name="username" id="sid_inp" placeholder="Tên người dùng" value=''><br>
+			<div style="padding: 10px 0">Mật khẩu</div>
+			<input type="password" name="password" id="sid_inp" placeholder="Mật khẩu" value=''><br>
+			<input type="submit" name="sub" id="sub_btn" value="Đăng nhập">
+		</form>
+	</div>
+</body>
+</html>

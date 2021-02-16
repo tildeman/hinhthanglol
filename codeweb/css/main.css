@@ -1,0 +1,149 @@
+body{
+	background-color: rgb(255,242,0);
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+.box{
+	border: #808080 thin solid;
+	width: 95%;
+	padding: 15px 2.5%;
+	margin: 10px 2.5%;
+	background-color: #aaa;
+	box-sizing: border-box;
+	float: left;
+}
+.error_box{
+	background-color: #ff8080;
+	border-color: #ff0000;
+}
+.info_box{
+	background-color: #aaaaff;
+	border-color: #0000ff;
+}
+.lol{
+	height: 48pt;
+}
+.title{
+	font-size: 48pt;
+}
+.title_container{
+	text-align: center;
+}
+#show_id_form{
+	width: 10%;
+	margin: 0 45%;
+	padding: 5px 0;
+	border-radius: 5px;
+}
+#sid_form{
+	border: #202020 thin solid;
+	border-radius: 5px;
+	width: 30%;
+	background-color: #404040;
+	margin: 0 35%;
+	text-align: center;
+	color: #ffffff;
+	float: left;
+}
+#show_login_form{
+	width: 10%;
+	margin: 0 45%;
+	padding: 5px 0;
+	border-radius: 5px;
+}
+#login_form{
+	border: #202020 thin solid;
+	border-radius: 5px;
+	width: 30%;
+	background-color: #404040;
+	margin: 0 35%;
+	text-align: center;
+	color: #ffffff;
+	float: left;
+}
+#sid_inp{
+	width: 95%;
+	height: 30px;
+	border-radius: 5px;
+	border-style: solid;
+}
+#sub_btn{
+	background-color: #123456;
+	width: 30%;
+	margin: 3px 2% 3px 68%;
+	height: 30px;
+	color: white;
+}
+.menu{
+	height: 30px;
+	width: 98%;
+	margin: 10px 1%;
+	float: left;
+	box-sizing: border-box;
+	background-color: #aaa;
+	border: #808080 thin solid;
+	border-radius: 3px;
+}
+.menu_btn{
+	height:100%;
+	background-color: #aaa;
+	border-color: 0 #808080;
+	float:left;
+	border: #808080 1px solid;
+	border-radius: 0;
+	width:20%;
+}
+#sel_round{
+	width: 48%;
+    margin: 0 1%;
+    height: 30px;
+    border-radius: 5px;
+    float: left;
+}
+#sel_db{
+	width: 48%;
+    margin: 0 1%;
+    height: 30px;
+    border-radius: 5px;
+    float: left;
+}
+.logs_tbl{
+	border-spacing: 0;
+	border: black thin solid;
+	margin-left: 20px;
+}
+.logs_tbl th,.logs_tbl td{
+	border: black thin solid;
+}
+.logs_tbl td{
+	text-align: center;
+}
+.ac_res{
+	background-color: #00bb00;
+	color: white;
+	padding: 5px 15px;
+}
+.wa_res{
+	background-color: #bb0000;
+	color: white;
+	padding: 5px 15px;
+}
+.ct{
+	padding-left: 20px;
+}
+.codeform{
+	width:98%;
+	margin:0 1%;
+}
+.codeform textarea{
+	width:100%;
+	min-height: 200px;
+	resize:vertical;
+}
+
+#debai_frame{
+	margin: 20px 0 0 1%;
+	width: 960px;
+	height: 540px;
+	background-color: white;
+}
