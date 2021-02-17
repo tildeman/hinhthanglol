@@ -1,6 +1,5 @@
 from urllib import request,error as uerror
 import sys
-import cgitb
 import re
 
 def pritn(st,encoding='utf-8'):
@@ -28,8 +27,8 @@ def get_categories():
 	r=re.compile(r"<option value=\"(\d+)\"   >\d* \- ([^<^>]*)</option>")
 	a=r.findall(g[2])
 	return(0,"Successful",a)
-def get_bai(id):
-	g=get_contents('codeweb/logs.php?idvong='+id+"&tab=rank")
+def get_bai(idbai):
+	g=get_contents('codeweb/logs.php?idvong='+idbai+"&tab=rank")
 	if (g[0]!=0):
 		return g
 	r=re.compile(r"<td>&nbsp &nbsp (\w+) &nbsp &nbsp</td>")
